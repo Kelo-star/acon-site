@@ -1,0 +1,20 @@
+/** Questions génériques à poser au vendeur ou à l'agent. */
+export const DEFAULT_QUESTIONS: string[] = [
+  'Pourquoi vendez-vous ?',
+  'Depuis combien de temps le bien est-il en vente ?',
+  'Le prix a-t-il déjà été diminué ?',
+  'Avez-vous reçu des offres ?',
+  'Depuis combien de temps possédez-vous le bien ?',
+  'Le bien était-il loué ?',
+  'Quel était le loyer ?',
+  'Y a-t-il eu des dégâts des eaux ?',
+  'Des sinistres ont-ils été déclarés ?',
+  'Y a-t-il eu des problèmes d’humidité ?',
+  'Quand la toiture a-t-elle été refaite ?',
+  'Quel âge a le chauffage ?',
+  'L’électricité a-t-elle été refaite ?',
+  'Quels travaux ont été réalisés ?',
+  'Existe-t-il des factures ?',
+  'Existe-t-il des devis récents ?',
+  'Pourquoi certains travaux n’ont-ils pas été réalisés ?',
+]

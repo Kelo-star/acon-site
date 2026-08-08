@@ -43,7 +43,7 @@ Dans tous les cas, les valeurs extraites ne sont **jamais enregistrées directem
 - L'URL d'origine est conservée (`listing.sourceUrl`) et affichée sur la fiche (« Voir l'annonce originale »).
 - Chaque import validé ajoute un `ListingSnapshot { date, askingPrice?, title?, description?, status? }`, ce qui prépare la future fonction « Mettre à jour depuis l'annonce » (détection de changement de prix, de description, d'annonce supprimée) et l'historique de prix.
 - Détection de doublon par `sourceUrl` normalisée (tracking et fragments ignorés) avec trois choix : ouvrir le bien existant, créer une copie, mettre à jour les informations.
-- Une mise à jour depuis une annonce n'écrase jamais silencieusement une information d'origine visite ou document ; le moteur de cohérence (`consistency.ts`) signale les contradictions entre annonce, visite et documents.
+- Une mise à jour depuis une annonce n'écrase jamais silencieusement un champ corrigé manuellement (provenance « manual ») ; les constats de visite vivent dans la checklist, les anomalies et les red flags, jamais écrasés par un import.
 
 ## V2 : backend d'import
 
